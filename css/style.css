@@ -2,19 +2,29 @@ ul li
 {
     list-style-type: none;/*去點*/
 }
-body{
+.content,
+.container,
+.line,
+section,
+body,
+h2{
   margin: 0;
+  padding: 0;
+  font-family: '微軟正黑體';
 }
 .container{
   max-width: 1280px;
   /*版面寬度1280px*/
   margin: auto;
   /*版面居中對齊*/
+  text-align: center;
+  background-image: url("img/background.png");
+  background-size: cover;
 }
 .wrapper {
   width: 100%;
   height: 100px;
-  background-image: url('img/header_ocean.png');
+  background-image: url("img/header_ocean.png");
 }
 .header_logo {
   float: left;
@@ -30,25 +40,6 @@ body{
   height: 80px;
   width: auto;
 }
-
-.abgne-frame{
-  margin: 20px auto;
-  text-align: center;
-}
-
-.abgne-frame a{
-  text-align: center;
-}
-
-.gg{
-  display: none;
-}
-
-.showbox img{
-  width: 90%;
-  height: auto;
-}
-
 
 /*----------------------------------------------下拉式選單*/
 
@@ -167,13 +158,98 @@ ul.header_label ul li:hover>ul {
 /*----------------------------------------------------------header*/
 /*----------------------------------------------------------section*/
 section{
-  min-height: 100vh;
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  display: inline-block;
 }
+
+.content{
+  width: 74%;
+  margin: 0;
+  display: inline-block;
+  text-align: left;
+}
+
+.abgne-frame{
+  margin: 20px auto 10px auto;
+  text-align: center;
+}
+
+.gg{
+  display: none;
+}
+
+.showbox img{
+  width: 100%;
+  height: auto;
+}
+
+.column{
+  display: inline-block;
+  margin-right: 40px;
+}
+
+.left{
+  float: left;
+  width: 45%;
+}
+
+.right{
+  float:inherit;
+  width: 45%;
+}
+
+.left .tab1{
+  margin-bottom: 38px;
+}
+
+.tab1 p{
+  width: 97%;
+}
+
+.line{
+  border-top: #99dcff 2px solid;
+  margin-bottom: 10px;
+}
+
+img.big-img{
+  width: 95%;
+  height: 215px;
+}
+
+.tab{
+  width: 95%;
+  display: inline-block;
+  margin-bottom: 40px;
+}
+
+.tab img{
+  width: 50%;
+  height: 100px;
+  float: left;
+  margin-right: 5px;
+}
+
+.sidebar{
+  width: 26%;
+  float: right;
+  text-align: left;
+}
+
 /*----------------------------------------------------------section*/
 /*----------------------------------------------------------footer*/
 footer{
   background-image: url(img/header_ocean.png);
   background-repeat: repeat-x;
+  height: 60px;
+}
+
+footer p{
+  position: relative;
+  text-align: center;
+  top: 18px;;
 }
 /*----------------------------------------------------------footer*/
 /*-----------------------------------------------------------------------------------max-width: 1060px*/

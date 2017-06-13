@@ -1,6 +1,6 @@
 $(function(){
 		// 針對每一個區塊來處理
-		$('.abgne-frame, .abgne-frame-2').each(function(){
+		$('.abgne-frame').each(function(){
 			var $frame = $(this),
 				$showImage = $frame.find('.show-image');
 
