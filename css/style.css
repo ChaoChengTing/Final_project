@@ -2,29 +2,37 @@ ul li
 {
     list-style-type: none;/*去點*/
 }
-.content,
 .container,
 .line,
-section,
 body,
-h2{
+h3{
   margin: 0;
   padding: 0;
   font-family: '微軟正黑體';
 }
+/*----------------------------------------------------------全版背景、header背景*/
+body{
+  background-image: url("img/background.png");
+  background-size: cover;
+}
+header{
+  background-image: url("img/header_ocean.png");
+  background-size: cover;
+}
+/*--------------------------------------------------全版背景、header背景*/
 .container{
+  width: 100%;
   max-width: 1280px;
   /*版面寬度1280px*/
   margin: auto;
   /*版面居中對齊*/
   text-align: center;
-  background-image: url("img/background.png");
-  background-size: cover;
 }
 .wrapper {
   width: 100%;
+  max-width: 1280px;
   height: 100px;
-  background-image: url("img/header_ocean.png");
+  margin: auto;
 }
 .header_logo {
   float: left;
@@ -32,8 +40,8 @@ h2{
 }
 .header_label {
   float: right;
-  margin-top: 47px;
-  margin-right: 40px;
+  margin-top: 32px;
+  margin-right: 10px;
 }
 .logo{
   margin-top: 10px;
@@ -90,7 +98,7 @@ ul.header_label a:hover {
 
 ul.header_label li:hover>a {
     /* 滑鼠移入次選單上層按鈕保持變色*/
-    background-color: #28b4ef;;
+    background-color: #2dd6f3;;
     color: #fff;
 }
 
@@ -103,7 +111,18 @@ ul.header_label ul {
 }
 
 ul.header_label ul li {
-    background-color: #28b4ef;
+    background-color: #2dd6f3;
+}
+
+.header_label a img{
+  position: absolute;
+  top: 26px;
+  left: 5px;
+  width: 20px;
+  height: auto;
+}
+.header_label p{
+  margin: 16px 0 0 0;
 }
 
 ul.header_label ul li:last-child {
@@ -155,22 +174,7 @@ ul.header_label ul li:hover>ul {
 }
 /*----------------------------------------------下拉式選單*/
 
-/*----------------------------------------------------------header*/
 /*----------------------------------------------------------section*/
-section{
-  position: relative;
-  width: 100%;
-  max-width: 1200px;
-  height: auto;
-  display: inline-block;
-}
-
-.content{
-  width: 74%;
-  margin: 0;
-  display: inline-block;
-  text-align: left;
-}
 
 .abgne-frame{
   margin: 20px auto 10px auto;
@@ -178,7 +182,11 @@ section{
 }
 
 .gg{
-  display: none;
+  border-top: #99dcff 2px solid;
+  width: 50px;
+  height: 5px;
+  border-radius: 30px;
+  -webkit-filter:grayscale(100);
 }
 
 .showbox img{
@@ -186,22 +194,11 @@ section{
   height: auto;
 }
 
-.column{
-  display: inline-block;
-  margin-right: 40px;
+.container h3,p,img,form{
+  text-align: left;
 }
 
-.left{
-  float: left;
-  width: 45%;
-}
-
-.right{
-  float:inherit;
-  width: 45%;
-}
-
-.left .tab1{
+.tab1{
   margin-bottom: 38px;
 }
 
@@ -214,28 +211,27 @@ section{
   margin-bottom: 10px;
 }
 
-img.big-img{
-  width: 95%;
-  height: 215px;
-}
-
 .tab{
-  width: 95%;
+  width: 100%;
   display: inline-block;
   margin-bottom: 40px;
 }
 
+img.big-img{
+  width: 100%;
+  height: auto;
+}
+
 .tab img{
   width: 50%;
-  height: 100px;
+  height: auto;
   float: left;
   margin-right: 5px;
 }
 
-.sidebar{
-  width: 26%;
-  float: right;
-  text-align: left;
+iframe{
+  width: 100%;
+  margin-bottom: 30px;
 }
 
 /*----------------------------------------------------------section*/
@@ -252,76 +248,76 @@ footer p{
   top: 18px;;
 }
 /*----------------------------------------------------------footer*/
-/*-----------------------------------------------------------------------------------max-width: 1060px*/
-@media (max-width: 1060px){
-  header{
-    background-image: none;
-    background-image: url('img/header_ocean_768.png');
+/*-----------------------------------------------------------------------------------max-width: 866px*/
+@media (max-width: 860px){
+  .wrapper{
+    width: 100%;
+    max-width: 860px;
   }
-  .wrapper {
-      width: 100%;
-      /*版面寬度768px*/
-      background-image: none;
-      height: 180px;
+  ul.header_label{
+    margin: 0;
   }
-
-  .header_logo {
-      margin-left: 10px;
-      margin-top: 10px;
+  ul.header_label p{
+    margin: 0;
   }
-  .logo{
-    width: 400px;
-  }
-  ul.header_label {
-      width: 100%;
-      margin-top: 10px;
-      text-align: center;
-  }
-  ul.header_label>li {
-      width: 24%;
-      display: inline-block;
-  }
-  ul.header_label a {
-      padding: 0;
+  ul.header_label img{
+    top:10px;
   }
 }
-/*-----------------------------------------------------------------------------------max-width: 1060px*/
+/*-----------------------------------------------------------------------------------max-width: 866px*/
 /*-----------------------------------------------------------------------------------max-width: 768px*/
 @media (max-width: 768px){
-  header{
-    background-image: none;
-    background-image: url('img/header_ocean_768.png');
-  }
-  .wrapper {
-      width: 90%;
-      /*版面寬度768px*/
-      background-image: none;
-      height: 180px;
-  }
 
-  .header_logo {
-      margin-left: 10px;
-      margin-top: 10px;
-  }
-  .logo{
-    width: 400px;
-  }
-  ul.header_label {
-      width: 100%;
-      margin-top: 10px;
-  }
-  ul.header_label>li {
-      width: 24%;
-      display: inline-block;
-  }
-  ul.header_label a {
-      padding: 0;
-  }
 }
 /*-----------------------------------------------------------------------------------max-width: 768px*/
 /*-----------------------------------------------------------------------------------max-width: 320px*/
 @media (max-width: 320px){
+  header{
+    height: 19vh;
+  }
 
+  .wrapper{
+    width: 100%;
+    text-align: center;
+    height: 19vh;
+  }
+
+  .header_logo{
+    margin: 0;
+  }
+
+  .logo{
+    width: 80%;
+    height:auto;
+  }
+
+  ul.header_label li{
+    width: 10vw;
+  }
+
+  ul.header_label a>p{
+    display: none;
+  }
+
+  ul.header_label a>img{
+    padding: 0;
+    position: relative;
+    top:0;
+    left: 0;
+    display:inline-block;
+    width: 10vw;
+    height: auto;
+    margin: 0;
+  }
+
+  .abgne-frame{
+    display: none;
+  }
+
+  footer{
+    height: 50px;
+    font-size: 8px;
+  }
 }
 /*-----------------------------------------------------------------------------------max-width: 320px*/
 a{
