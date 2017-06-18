@@ -1395,17 +1395,17 @@ pre code {
 }
 @media (min-width: 768px) {
   .container {
-    width: 768px;
+    width: 750px;
   }
 }
-@media (min-width: 1060px) {
+@media (min-width: 970px) {
   .container {
-    width: 1060px;
+    width: 970px;
   }
 }
-@media (min-width: 1280px) {
+@media (min-width: 1170px) {
   .container {
-    width: 1280px;
+    width: 1170px;
   }
 }
 .container-fluid {
@@ -3942,7 +3942,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-brand {
   float: left;
-  height: 50px;
+  height: auto;
   padding: 15px 15px;
   font-size: 18px;
   line-height: 20px;
