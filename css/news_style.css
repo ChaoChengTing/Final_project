@@ -1,0 +1,164 @@
+html{
+  overflow-x: hidden;
+}
+body{
+  padding:0px;
+  margin:0px;
+  background-color:#eee;
+  font-family:'Open Sans',sans-serif,arial,helvetica,verdana;
+}
+.container{
+  width: 100%;
+  max-width: 1280px;
+  margin: auto;
+}
+ul li
+{
+    list-style-type: none;/*去點*/
+}
+.wrapper {
+    /*版面寬度1280px*/
+    margin: 0 auto;
+    /*版面居中對齊*/
+    height: 100px;
+
+}
+/*----------------------------------------------------------content*/
+
+/*------------------------------------------------左邊部分*/
+#body_left{
+  float: left;
+  background-color: #fff;
+  margin-top: 40px;
+  display: block;
+}
+#body_left>*>h1{
+  margin: auto;
+  width: 100%;
+}
+#title{
+  margin-top: 30px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+}
+#title>h1{
+  font-size: 32px;
+  font-family: 'Microsoft JhengHei';
+  font-weight:bold;
+}
+#edit,#edit>img{
+  display: inline-block;
+  float:left;
+  font-size: 13px;
+  color: #666666;
+}
+#edit{
+  width: 100%;
+  display: inline-block;
+  margin-left: 20px;
+}
+#edit p{
+  margin-left: 20px;
+  margin-top: -1px;
+  margin-bottom: 10px;
+}
+#content img{
+  margin: 10px 0px 10px 0px;
+  width: 100%;
+}
+#content p{
+  font-size: 18px;
+  margin: auto;
+  margin-top: 20px;
+  width: 96%;
+  line-height: 200%;
+}
+
+/*------------------------------------------------左線*/
+.line{
+  width: 92%;
+  margin: auto;
+}
+#left_body_dotted_line{
+  border-top: #99dcff 2px dashed;
+  margin: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+
+}
+#left_body_line{
+  border-top: #99dcff 2px solid;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+/*------------------------------------------------左線*/
+/*------------------- -----------------------------評論*/
+.fb-comments iframe{
+  margin-left: 30px;
+  width: 93% !important;
+}
+.fb_iframe_widget,.fb_iframe_widget span{
+  display: block !important;
+  width: 100% !important;
+}
+/*------------------------------------------------評論*/
+
+/*------------------------------------------------左邊部分*/
+/*------------------------------------------------右邊部分*/
+#body_right{
+  float: right;
+  margin-right: 30px;
+  margin-top: 40px;
+}
+
+.search>h1,.picture>h1{
+  font-family: 'Microsoft JhengHei';
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+/*------------------------------------------------右線*/
+#right_body_line{
+  border-top: #99dcff 2px solid;
+  margin: auto;
+  margin-bottom: 10px;
+  margin-top: -10px;
+}
+/*------------------------------------------------右線*/
+/*--------------------------------------------搜尋部分*/
+.search_part{
+  width: 100% !important;
+  margin-bottom: -60px;
+}
+
+
+/*-------------------------------------------搜尋部分*/
+/*-------------------------------------------圖片導覽*/
+.carousel-indicators .active{
+  width: 8px;
+  height: 8px;
+}
+.carousel-indicators li{
+  width: 8px;
+  height: 8px;
+  margin: 0;
+  margin-top: 15px;
+}
+
+/*-------------------------------------------圖片導覽*/
+/*-------------------------------------------捐款*/
+.donate img{
+  margin-top: 20px;
+  width: 100%;
+}
+/*-------------------------------------------捐款*/
+/*------------------------------------------粉絲專業*/
+.fans{
+  width: 100% !important;
+  margin-top: 20px;
+}
+/*------------------------------------------粉絲專業*/
+/*------------------------------------------------右邊部分*/
+
+/*----------------------------------------------------------content*/
