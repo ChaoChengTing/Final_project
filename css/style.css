@@ -24,6 +24,27 @@ body{
   /*版面居中對齊*/
   text-align: center;
 }
+<<<<<<< HEAD
+=======
+.wrapper {
+  width: 100%;
+  max-width: 1280px;
+  height: auto;
+  margin: auto;
+}
+.header_logo {
+  float: left;
+  margin-left: 12px;
+}
+.header_label {
+  float: right;
+  margin-top: 32px;
+}
+.logo{
+  height: 80px;
+  width: auto;
+}
+>>>>>>> origin/master
 /*----------------------------------------------------------section*/
 
 #myCarousel{
@@ -58,8 +79,13 @@ h3{
 .tab1{
   margin-bottom: 38px;
 }
-
+.tab2{
+  margin-bottom: 65px;
+}
 .tab1 p{
+  width: 97%;
+}
+.tab2 p{
   width: 97%;
 }
 
@@ -91,10 +117,16 @@ iframe{
   width: 100%;
   margin-bottom: 30px;
 }
+<<<<<<< HEAD
 @media screen and (max-width:795px){
   h3{
     margin-top: 10px;
   }
 }
+=======
+
+/*----------------------------------------------------------section*/
+/*-----------------------------------------------------------------------------------max-width: 320px*/
+>>>>>>> origin/master
 
 /*----------------------------------------------------------section*/

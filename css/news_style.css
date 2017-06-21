@@ -52,6 +52,12 @@ ul li
   font-size: 13px;
   color: #666666;
 }
+<<<<<<< HEAD
+=======
+#edit>img{
+  margin-bottom: -30px;
+}
+>>>>>>> origin/master
 #edit{
   width: 100%;
   display: inline-block;
